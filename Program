@@ -1,0 +1,27 @@
+print "Detenevi crypto attività al 01/01/2023? "
+detenzione = gets.chomp
+if user_input.include? "s"
+  print "Vuoi scoprire se la rideterminazione ti farà risparmiare tasse? "
+else
+  puts "Questo servizio non fa per te!"
+risparmio = gets.chomp
+if user_input.include? "s"
+ print "eccoci qua!"
+else 
+  puts "Vieni a trovarci sul canale telegram @... se cambi idea!"
+end
+
+
+print "What's your last name? "
+last_name = gets.chomp
+last_name.capitalize!
+
+print "What city are you from? "
+city = gets.chomp
+city.capitalize!
+
+print "What state or province are you from? "
+state = gets.chomp
+state.upcase!
+
+puts "Your name is #{first_name} #{last_name} and you're from #{city}, #{state}!"
