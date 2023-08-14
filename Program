@@ -1,27 +1,62 @@
+0) Welcome to D&D Consulting 
+1) condizioni necessarie --> metodo Info
+2) Prezzo di carico = o /= da zero --> metodo Pc
+3) tasse risparmiate --> metodo Tax
+
+
+0)
+Se sei entrato in possesso di crypto tramite airdrop, staking, donazione oppure non conosci il prezzo di acquisto o non puoi dimostrarlo puoi sfrutare la nuova legge di bilancio 2023.
+Questa ti permette di rideterminare il prezzo di acquisto di una o più crypto attività, pagando il 14% del valore di ciascuna crypto alla data del 01/01/2023.
+Il nuovo prezzo di carico o acquisto sarà il valore alla data del 01/01/2023. 
+
+In caso di airdrop, staking, donazione e in tutti i frangenti dove non è possibile dimostrare il prezzo di acquisto, la rideterminazione permette di risparmiare molte tasse.
+Anche se la crypto attività in questione è già stata venduta è possibile rideterminarne il prezzo.
+La rideterminazione è un'opzione e questo servizio ti sarà utile per capire se ti conviene rideterminare le tue crypto e quante tasse risparmierai. 
+Per avere tutte le risposte che stai cercando rispondi a queste poche domande:
+
+
+1)
 print "Detenevi crypto attività al 01/01/2023? "
 detenzione = gets.chomp
-if user_input.include? "s"
-  print "Vuoi scoprire se la rideterminazione ti farà risparmiare tasse? "
+if detenzione.include? "s"
+  print "Nel corso dell'anno 2022 hai generato profitti superiori a 2000€? "
 else
   puts "Questo servizio non fa per te!"
-risparmio = gets.chomp
-if user_input.include? "s"
- print "eccoci qua!"
+end
+franchigia = gets.chomp
+if franchigia.include? "s"
+ print "Vuoi scoprire se la rideterminazione ti farà risparmiare tasse? "
 else 
-  puts "Vieni a trovarci sul canale telegram @... se cambi idea!"
+  puts "Questo servizio non fa per te!"
+end
+rideterminazione = get.chomp
+if rideterminazione.include? "s"
+ print "A breve saprai quanto potrai risparmiare. Rispondi alle prossime domande "
+else 
+ puts "Vieni a trovarci sul canale telegram @... se cambi idea!"
 end
 
+2a)
+print "Hai ottenuto una o più delle tue crypto tramite staking, airdrop, donazione oppure non conosci il prezzo di acquisto o non hai documenti che attestano l'acquisto delle tue crypto attività? "
+pc0 = gets.chomp
+if pc0.include? "s"
+ print "La rideterminazione è sempre conveniente in quanto il prezzo di acquisto per crypto attività ottenute nelle modalità precedenti è pari a zero. Inserisci il nome della crypto per sapere quante tasse puoi risparmiare: "
+else print "La rideterminazione è conveniente solo se il prezzo di acquisto è inferiore al 46% del valore di tale crypto al 01/01/2023."
+end
+nome_crypto = gets.chomp
+if nome_crypto.include? "bitcoin"
+ print "Puoi risparmiare fino a 1850€ per bitcoin!"
+elsif nome_crypto.include? "ethereum"
+ print "Puoi risparmiare fino a "
+elsif nome_crypto.include? "ripple"
+ print "Puoi risparmiare fino a "
+else
+ puts "A breve inseriremo anche questa crypto nei nostri sistemi"
+end
 
-print "What's your last name? "
-last_name = gets.chomp
-last_name.capitalize!
+2b)
+print "conosci il prezzo di carico? Scrivilo qui: "
+pc = gets.to_i
+puts "1850 - #{pc}  
 
-print "What city are you from? "
-city = gets.chomp
-city.capitalize!
 
-print "What state or province are you from? "
-state = gets.chomp
-state.upcase!
-
-puts "Your name is #{first_name} #{last_name} and you're from #{city}, #{state}!"
